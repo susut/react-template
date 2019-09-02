@@ -1,0 +1,19 @@
+{
+  "presets": [
+    [
+      "@babel/env", // 允许使用js新语法，默认转换为es5
+      {
+        "modules": false // unable transformation of ES6 module syntax to another module type
+      }
+    ],
+    "@babel/preset-react" // 处理jsx
+  ],
+  "plugins": [ // 按需加载antd
+    ["import", {
+      "libraryName": "antd",
+      "libraryDirectory": "es",
+      "style": true // `style: true` 会加载 less 文件
+    }],
+    "@babel/plugin-proposal-class-properties" // 允许class中使用箭头函数属性
+  ]
+}
