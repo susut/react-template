@@ -1,0 +1,16 @@
+node_modules/
+
+# production
+dist/
+tmp/
+lib/
+
+# misc
+.idea/
+.happypack
+.DS_Store
+*.swp
+*.dia~
+
+*.log
+*.tgz
