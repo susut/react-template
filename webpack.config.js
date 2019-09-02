@@ -9,7 +9,6 @@ module.exports = (env, argv) => {
   console.log(argv.mode);
   return {
     entry: './src/index.js', // 入口文件
-    mode: 'development',
     // devtool: argv.mode === 'develpment' ? 'cheap-module-eval-source-map' : false, // 代码与文件的映射关系，便于调试
     resolve: {
       extensions: ['.js', '.vue', '.json', '.css', '.less'], // import 文件没有后缀名则去找.js的同名文件，没找到再去找.vue，以此类推
