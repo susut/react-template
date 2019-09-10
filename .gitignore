@@ -7,7 +7,6 @@ lib/
 
 # misc
 .idea/
-.happypack
 .DS_Store
 *.swp
 *.dia~

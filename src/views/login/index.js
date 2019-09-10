@@ -1,6 +1,5 @@
 import React from "react";
 import { Form, Icon, Input, Button } from 'antd/es';
-import { routerRedux } from 'dva/router';
 
 class Login extends React.Component {
   handleSubmit = e => {
