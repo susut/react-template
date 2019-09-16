@@ -36,19 +36,19 @@ module.exports = (env, argv) => {
             "style-loader",
             "css-loader",
             {
+              loader: "postcss-loader",
+              options: {
+                plugins: [
+                  require('autoprefixer'),
+                ]
+              }
+            },
+            {
               loader: "less-loader",
               options: {
                 javascriptEnabled: true
               }
-            },
-            // {
-            //   loader: "postcss-loader",
-            //   options: {
-            //     plugins: [
-            //       require('autoprefixer'),
-            //     ]
-            //   }
-            // }
+            }
           ]
         },
         {

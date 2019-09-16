@@ -4,7 +4,6 @@ const { Header, Sider, Content } = Layout;
 import "./index.less"
 import {connect} from "dva";
 import {Link, Route} from 'dva/router';
-import Login from "../views/login";
 import Home from "../views/home";
 import Page1 from "../views/page1";
 

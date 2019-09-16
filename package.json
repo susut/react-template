@@ -39,8 +39,6 @@
   "dependencies": {
     "@babel/runtime": "^7.6.0",
     "antd": "^3.20.7",
-    "dva": "^2.4.1",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "dva": "^2.4.1"
   }
 }
