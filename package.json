@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --mode=development --open",
+    "start": "webpack-dev-server --mode=development",
     "build": "webpack --mode=production"
   },
   "keywords": [],
@@ -41,7 +41,6 @@
     "antd": "^3.20.7",
     "dva": "^2.4.1",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "umi-plugin-react": "^1.10.0"
+    "react-dom": "^16.8.6"
   }
 }

@@ -1,15 +1,16 @@
 import React, { Component} from "react";
-import Login from './views/login';
-import { Route } from 'dva/router';
+import Layouts from './layouts';
 import "./app.less"
+import {Route} from "dva/router";
+import Login from "./views/login";
+
 
 class App extends Component{
   render(){
     return(
       <div className="app">
-        <h1> Hello, World!{process.env.NODE_ENV}</h1>
-
-        <Route path="/login" exact component={Login} />
+        <Route path='/login' component={Login} />
+        <Route path='/layout' component={Layouts} />
       </div>
     );
   }

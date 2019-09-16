@@ -35,15 +35,20 @@ module.exports = (env, argv) => {
           loader: [
             "style-loader",
             "css-loader",
-            "less-loader",
             {
-              loader: "postcss-loader",
+              loader: "less-loader",
               options: {
-                plugins: [
-                  require('autoprefixer'),
-                ]
+                javascriptEnabled: true
               }
-            }
+            },
+            // {
+            //   loader: "postcss-loader",
+            //   options: {
+            //     plugins: [
+            //       require('autoprefixer'),
+            //     ]
+            //   }
+            // }
           ]
         },
         {
@@ -93,5 +98,5 @@ module.exports = (env, argv) => {
       hot: true, // 热更新，不刷新页面
       port: 3000
     }
-  }  
+  }
 }

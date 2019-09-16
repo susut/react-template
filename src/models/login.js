@@ -23,7 +23,7 @@ export default {
     *signIn({ payload: params}, { call, put }) {
       const user = yield call(loginService.login, params);
       yield put({ type: 'login', payload: user});
-      yield put( routerRedux.push('/') );
+      yield put( routerRedux.push('/layout/home') );
     }
   }
 }

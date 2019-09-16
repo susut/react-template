@@ -1,13 +1,13 @@
 import React from "react";
 import "./index.less"
 
-function Home() {
+function Page1() {
   return (
     <div>
-      <h2>Home</h2>
+      <h2>Page1</h2>
     </div>
   );
 }
 
 
-export default Home;
+export default Page1;
